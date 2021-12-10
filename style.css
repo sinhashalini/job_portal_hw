@@ -7,7 +7,7 @@
 .navbar-brand{
     font-size: 2rem;
     color: red;
-    background: url(./img/main_pic.jpg) no-repeat;
+    /*background: url(./img/main_pic.jpg) no-repeat;*/
     font-family: 'Dancing Script', cursive;
 }
 
@@ -58,9 +58,9 @@
 /***************************************** Main Section ************************/
 
 .main{
-    background: url(./img/main_pic.jpg) no-repeat;
+    background: url(./img/jump.jpg) no-repeat;
     background-size: cover;
-    min-height: 60vh;
+    height: 800%;
     width: 100%;
 }
 .main h1{
