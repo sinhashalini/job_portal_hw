@@ -1,0 +1,174 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>SimplySearch Job Portal</title>
+
+    <script>
+        $(document).ready(function(){
+            //$("#myModal").modal('show');
+        });
+    </script>
+
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">SimplyJob</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" > Dropdown</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <button class="btn0">Register</button>
+              <button class="btn1 mx-2">Login</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <!-- ##################  main section ############################-->
+    <section class="main py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h1>Simply Search <br>
+                    Sinfull Jobs</h1>
+                    <input type="text" placeholder="Keyword">
+                    <button class="btn2 mt-5">Find Job</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ################     Register secton ###############-->
+    <section class="register py-5">
+        <div class="container py-5">
+            <h2>Register here to get your dream Jobs</h2>
+            <hr>
+            <form class="needs-validation" novalidate>
+                <div class="form-row">
+                  <div class="col-md-4 mb-3">
+                    <label for="validationCustom01">First name</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="validationCustom02">Last name</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="validationCustomUsername">Username</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                      </div>
+                      <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                      <div class="invalid-feedback">
+                        Please choose a username.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-4 mb-3">
+                    <label for="validationCustom03">City</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid city.
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="validationCustom04">State</label>
+                    <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid state.
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="validationCustom05">Zip</label>
+                    <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid zip.
+                    </div>
+                  </div>
+                </div>
+                <div class="custom-file py-3">
+                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                    <label class="custom-file-label" for="validatedCustomFile">Upload your resume...</label>
+                    <div class="invalid-feedback">Example invalid custom file feedback</div>
+                  </div>
+
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+
+                <button class="btn0 btn-primary" type="submit">Submit form</button>
+              </form>
+         </div>
+        </div>
+    </section>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
+
+  </body>
+
+</html>
