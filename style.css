@@ -9,7 +9,7 @@
 .navbar-light .navbar-brand{
     font-size: 2.5rem;
     color: red;
-    background-image: linear-gradient(to right,orange,violet);
+    /*background-image: linear-gradient(to right,orange,violet);*/
     font-family: 'Dancing Script', cursive;
 }
 
@@ -25,23 +25,23 @@
     font-weight: 500;
     padding: 35px;
 }
-.btn0{
-    height: 52px;
-    width: 130px;
+
+.btn-reg {
     outline: none;
     border: none;
     color: white;
     cursor: pointer;
     transition: all 0.4s;
     background: orangered;
+    text-align: center; 
 }
-.btn0:hover{
+
+.btn-reg:hover{
     background: red;
     transition: all 0.4s;
 }
 
-.btn1{
-    height: 52px;
+.btn-post{
     width: 130px;
     outline: none;
     border: 2px solid rosybrown;
@@ -50,7 +50,7 @@
     transition: all 0.4s;
     background-color: transparent;
 }
-.btn1:hover{
+.btn-post:hover{
     background:darkred;
     transition: all 0.4s;
     color : white;
