@@ -12,28 +12,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>SimplySearch Job Portal</title>
 <!-- 
-1. create a separate js file
-2. hamburger icon for smaller display
-3. make rounded button
-4. remove display of time
-5. create a carousal on main
-6. featured jobs space and font size
-7. make 8 featured jobs with differnt names for types
-8. create a sample job page
-9. modal improvements - functionality of cross, subscribe button on right
+1. create a separate js file -done
+2. hamburger icon for smaller display - done
+3. make rounded button -done
+4. remove display of time -done
+5. create a carousal on main - difficult
+6. featured jobs space and font size - done
+7. make 8 featured jobs with differnt names for types -done
+8. create a sample job page 
+9. modal improvements - functionality of cross, subscribe button on right - done
 
 -->
-    <script>
-        $(document).ready(function(){
-            $("#myModal").modal('show');
-        });
-
-
-    </script>
 
   </head>
   <body>
@@ -48,16 +42,44 @@
 
         </div>
     </section>
+
+    <!-- Bootstrap Modal to show Alert for the newsletter-->
+    <!-- source at https://getbootstrap.com/docs/4.0/components/modal/-->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Subscribe our Newsletter</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Subscribe to our mailing list to get the latest jobs straight in your inbox.</p>
+                    <form>
+                        <div class="form-group">
+                            <input id="modalText" type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group pt-2">
+                            <input id="modalEmail" type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="closeModal()">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="validateAndSubmitModal()">Subscribe</button>
+                  </div>
+            </div>
+        </div>
+    </div>
     <!-- ##################  Nav section ############################-->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">SimplyJob</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+    <!-- source at https://getbootstrap.com/docs/4.1/components/navbar/-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand mx-2" href="index.html">SimplyJobs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
                 <a class="nav-link " href="index.html">Home</a>
               </li>
               <li class="nav-item">
@@ -69,14 +91,14 @@
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
-            </ul>
-            <form class="d-flex">
-                <a href="./register.html" class=" btn btn-primary btn0">Register</a>
-              <button class="btn1 mx-2">Login</button>
-            </form>
-          </div>
+          <form class="d-flex m-auto">
+            <a href="./register.html" class=" btn btn-primary btn0 mx-2">Register</a>
+            <a href="./login.html" class=" btn btn-primary btn1 mx-2">Login</a>
+            
+          </form>
         </div>
-    </nav>
+      </nav>
+
 
     <!-- ##################  main section ############################-->
     <section class="main py-5">
@@ -95,17 +117,17 @@
      <!-- ##################  category section ############################-->
     <section class="category py-5">
         <div class="container-fluid py-5 text-center">
-            <p class="red"> Featured Jobs</p>
+            <h4 class="red"> Featured Jobs</h4>
             <h1> Browse Top Categories </h1>
             <div class="row py-5">
-                <div class="col-lg-12 m-auto pt-5">
-                    <div class="row py-5">
+                <div class="col-lg-12 m-auto pt-2">
+                    <div class="row py-2">
                         <div class="col-lg-3">
                             <div class="card py-3">
                                 <div class="class-body">
-                                    <img src="./img/main_pic.jpg" class="img-fluid my-3">
-                                    <h6> Design Jobs</h6>
-                                    <h6 class="red"> (342)</h6>
+                                    <img src="./img/cat/lawyer.PNG" class="img-fluid my-3">
+                                    <h6> Sales and Management</h6>
+                                    <h6 class="red"> (322)</h6>
                                 </div>
                             </div>
                         </div>
@@ -113,9 +135,9 @@
                         <div class="col-lg-3">
                             <div class="card py-3">
                                 <div class="class-body">
-                                    <img src="./img/main_pic.jpg" class="img-fluid my-3">
-                                    <h6> Design Jobs</h6>
-                                    <h6 class="red"> (342)</h6>
+                                    <img src="./img/cat/cook.PNG" class="img-fluid my-3">
+                                    <h6> Food and Resturant</h6>
+                                    <h6 class="red"> (242)</h6>
                                 </div>
                             </div>
                         </div>
@@ -123,9 +145,9 @@
                         <div class="col-lg-3">
                             <div class="card py-3">
                                 <div class="class-body">
-                                    <img src="./img/main_pic.jpg" class="img-fluid my-3">
-                                    <h6> Design Jobs</h6>
-                                    <h6 class="red"> (342)</h6>
+                                    <img src="./img/cat/doctor.PNG" class="img-fluid my-3">
+                                    <h6> Hospital and Health Care</h6>
+                                    <h6 class="red"> (240)</h6>
                                 </div>
                             </div>
                         </div>
@@ -133,9 +155,50 @@
                         <div class="col-lg-3">
                             <div class="card py-3">
                                 <div class="class-body">
-                                    <img src="./img/main_pic.jpg" class="img-fluid my-3">
-                                    <h6> Design Jobs</h6>
-                                    <h6 class="red"> (342)</h6>
+                                    <img src="./img/cat/educ.PNG" class="img-fluid my-3">
+                                    <h6> Education and Trainings</h6>
+                                    <h6 class="red"> (287)</h6>
+                                </div>
+                            </div>
+                        </div>
+ 
+                    </div>
+                    <div class="row py-5">
+                        <div class="col-lg-3">
+                            <div class="card py-3">
+                                <div class="class-body">
+                                    <img src="./img/cat/tour.PNG" class="img-fluid my-3">
+                                    <h6> Travels and Tourism</h6>
+                                    <h6 class="red"> (280)</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card py-3">
+                                <div class="class-body">
+                                    <img src="./img/cat/pilot.PNG" class="img-fluid my-3">
+                                    <h6> Aviation </h6>
+                                    <h6 class="red"> (142)</h6>
+                                </div>
+                            </div>
+                        </div>
+ 
+                        <div class="col-lg-3">
+                            <div class="card py-3">
+                                <div class="class-body">
+                                    <img src="./img/cat/house.PNG" class="img-fluid my-3">
+                                    <h6> Constrution and Maintainance</h6>
+                                    <h6 class="red"> (140)</h6>
+                                </div>
+                            </div>
+                        </div>
+ 
+                        <div class="col-lg-3">
+                            <div class="card py-3">
+                                <div class="class-body">
+                                    <img src="./img/cat/fire.PNG" class="img-fluid my-3">
+                                    <h6> Safety and Control </h6>
+                                    <h6 class="red"> (42)</h6>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +207,7 @@
                 </div>
             </div>
 
-            <div class="row py-5">
+            <div class="row py-3">
                 <div class="col-lg-5 m-auto">
                     <button class="btn3"> Browse all Categories</button>
                 </div>
@@ -156,17 +219,17 @@
     <!--###################   Resume    ###############################-->
     <section class="resume py-5 text-center text-white">
         <div class="container">
-            <div class="row">
+            <div class="row py-5">
                 <div class="col-lg-10 m-auto">
                     <p> Feature our best jobs</p>
                     <h1> First steps towards your dream job!</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-5">
-                    <button class="btn3 m-auto">
+                <div class="col-lg-5 m-auto">
+                   <a href="./register.html"> <button class="btn3">
                         Upload your CV
-                    </button>
+                    </button></a>
                 </div>
             </div>
         </div>
@@ -331,36 +394,6 @@
         </section>
 
 
-        <div id="myModal" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Subscribe our Newsletter</h5>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Subscribe to our mailing list to get the latest updates straight in your inbox.</p>
-                        <form>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email Address">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
-    <script>
-            var today = new Date();
-    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    var dateTime = date+' '+time;
-    document.getElementById("currentDateTime").innerHTML = today;
-    </script>
   </body>
 </html>

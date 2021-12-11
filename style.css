@@ -4,10 +4,12 @@
     box-sizing: border-box;
 }
 
-.navbar-brand{
-    font-size: 2rem;
+
+
+.navbar-light .navbar-brand{
+    font-size: 2.5rem;
     color: red;
-    /*background: url(./img/main_pic.jpg) no-repeat;*/
+    background-image: linear-gradient(to right,orange,violet);
     font-family: 'Dancing Script', cursive;
 }
 
@@ -101,6 +103,7 @@
     font-size: 3.5rem;
     color: black;
 }
+
 .category .card:hover{
     color : red;
     cursor: pointer;
@@ -131,7 +134,7 @@
  .resume {
      background: linear-gradient(rgba(4,11,75,0.72),rgba(4,26,210,0.73)),url(./img/main_pic.jpg) no-repeat;
      background-size: cover;
-     height: 90vh;
+     height: 60vh;
      width : 100%;
  }
  .resume h1 {
