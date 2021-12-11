@@ -13,14 +13,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css"> 
+    <link   rel="stylesheet"  href="./conatct.css">
     <title>SimplySearch Job Portal</title>
-
-    <script>
-        $(document).ready(function(){
-            //$("#myModal").modal('show');
-        });
-    </script>
-
+    <
   </head>
   
   <body>
@@ -52,32 +48,54 @@
           </div>
         </div>
     </nav>
-
+    <div class="bg-image"><h1>Contact us</h1></div>
+    <br>
     <!-- ##################  main section ############################-->
-    <section class="main py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-7">
-                    <h1>Simply Search <br>
-                    Sinfull Jobs</h1>
-                    <input type="text" placeholder="Keyword">
-                    <button class="btn2 mt-5">Find Job</button>
-                </div>
-            </div>
-        </div>
-    </section>
+    
+    <div class="paddingBlock">
+      
+      <div class="equalHMWrap eqWrap">
+        
+        <div class="equalHM eq"><i class="fa fa-camera-retro fa-fw"></i>
+          <h3>Phone </h3><br> <p class ="textinside">00 49 89 3402681-5</p></div>
+        <div class="equalHM eq"><i class="fa fa-envelope-o fa-fw"></i><h3>Email</h3><br><p class ="textinside">contact@simplyjob.de</p></div>
+        <div class="equalHM eq"><i class ="fa fa-home fa-2x"></i><h3>Location</h3><br> <p class ="textinside">SimplyJob Career portal GmbH<br>Balanstrasse 73<br> 81541 Munich</p></div>
+      </div>
+    </div>
+<!-- ################## map section ############################-->
+>
 
+></div>
+
+
+  <div class="container py-12">
+      <div class="row text-center">
+          <div class="col-lg-0">
+            <span> Find us here</span>
+          </div>
+          <div class="googlemap"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d42609.31673903773!2d11.5908196!3d48.1279363!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf71a3829e9b%3A0x4eea551fc7e9235f!2sReDI%20School%20of%20Digital%20Integration%20Munich!5e0!3m2!1sen!2sde!4v1639184170745!5m2!1sen!2sde" width="100%" height="500 vh" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+          <br>
+          <br>
+          <br>
+        </div>
+
+        
+      </div>
+  </div>
     <!-- ################     Register secton ###############-->
     <section class="register py-5">
+      <div class="wrapper">
         <div class="container py-5">
-            <h2>Contact us to get more info</h2>
+            <h2>Get in touch!</h2>
             <hr>
             <form>
               <div class="row py-3">
                 <div class="col">
+                  <label for="exampleFormControlname1">Name</label>
                   <input type="text" class="form-control" placeholder="First name">
                 </div>
                 <div class="col">
+                  <label for="exampleFormControlname2">Last name</label>
                   <input type="text" class="form-control" placeholder="Last name">
                 </div>
               </div>
@@ -90,9 +108,9 @@
                 <select class="form-control" id="exampleFormControlSelect1">
                   <option>Couldnot find the job!</option>
                   <option>Registeration issue!</option>
-                  <option>You want to meet your sales representative</option>
-                  <option>You are investor!</option>
-                  <option>Misc</option>
+                  <option>You want to contact our customer care representative</option>
+                  <option>You want to post job!</option>
+                  <option>Others</option>
                 </select>
               </div>
               <div class="form-group py-3">
@@ -101,8 +119,8 @@
                   <option>R and D</option>
                   <option>Sales</option>
                   <option>Marketing</option>
-                  <option>Investment</option>
-                  <option>MIsc</option>
+                  <option>Finance</option>
+                  <option>Others</option>
                 </select>
               </div>
               <div class="form-group py-3">
@@ -111,33 +129,29 @@
               </div>
 
               <button type="submit" class="btn btn-primary btn0">Submit</button>
-
+            </div>
             </form>
          </div>
         </div>
-    </section>
+    
+    
+    
 
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function() {
-          'use strict';
-          window.addEventListener('load', function() {
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.getElementsByClassName('needs-validation');
-            // Loop over them and prevent submission
-            var validation = Array.prototype.filter.call(forms, function(form) {
-              form.addEventListener('submit', function(event) {
-                if (form.checkValidity() === false) {
-                  event.preventDefault();
-                  event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-              }, false);
-            });
-          }, false);
-        })();
-        </script>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="contact us.js"></script>
   </body>
 
 </html>

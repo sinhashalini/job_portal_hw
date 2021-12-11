@@ -1,0 +1,185 @@
+style>* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    
+    box-sizing: border-box; 
+  }
+  
+  html, body  { 
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.4;
+  }
+  
+  h1 {
+    font-size: 150%;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  .paddingBlock {
+    padding: 20px 0;
+  }
+  
+  .eqWrap {
+    display: flex;
+  }
+  
+  .eq {
+    padding: 10px;
+  }
+  
+  .eq:nth-of-type(odd) {
+    background: #cf7250;
+  }
+  
+  .eq:nth-of-type(even) {
+    background: lightblue;
+  }
+  
+  .equalHW {
+    flex: 1;
+  }
+  
+  .equalHMWrap {
+    justify-content: space-between;
+  }
+  
+  .equalHM {
+    width: 32%;
+  }
+  
+  .equalHMRWrap {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .equalHMR {
+    width: 32%;
+    margin-bottom: 2%;
+  }
+  
+  .equalHMVWrap {
+    flex-wrap: wrap;
+  }
+  
+  .equalHMV {
+    width: 32%;
+    margin: 1%;	
+  }
+  
+  .equalHMV:nth-of-type(3n) {
+    margin-right: 0;	
+  }
+  
+  .equalHMV:nth-of-type(3n+1) {
+    margin-left: 0;	
+  }
+  h3{
+    text-align: center;
+    color: rgb(248, 245, 245);
+   h2 {
+     text-align-last: ;
+   } 
+  }
+  equalHM eq{
+    text-align: center;
+  }
+  .textinside{
+    text-align: center;
+    color: azure;
+  }
+  i{
+    align-self: center;
+  }
+  .bg-image {
+    height:34vh;
+    background-image: url(./img/apply_back.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .container py-5{
+    background-image: url(./img/apply_background.jpg);
+  }
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+/* RESET RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+select {
+  appearance: none;
+}
+
+/* Remove native arrow on IE */
+select::-ms-expand {
+  display: none;
+}
+
+/*We use !important to override the color set for the select on line 99*/
+select:-moz-focusring {
+  color: transparent !important;
+  text-shadow: 0 0 0 var(--white);
+}
+
+textarea {
+  resize: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font: 18px/1.5 "Open Sans", sans-serif;
+  background: var(--bodyColor);
+  color: var(--white);
+  margin: 1.5rem 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  ;
+}
+
+.container py-5{
+    background-color:red
+}
+.wrapper{
+    background-color: #d8a331;
+    opacity: .8;
+    
+}
+h1{
+    margin:left;
+}
