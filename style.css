@@ -62,7 +62,7 @@
 .main{
     background: url(./img/jump.jpg) no-repeat;
     background-size: cover;
-    height: 800%;
+    height: 80%;
     width: 100%;
 }
 .main h1{
@@ -166,7 +166,7 @@
  .apply{
     background: url(./img/apply_back.png)no-repeat;
     background-size: cover;
-    height: 110vh;
+    height: 75vh;
     width: 100%;
  }
  .apply .card{
@@ -183,6 +183,8 @@
 }
 
 .cirl img{
+    height: 100px;
+    width: 100px;
     border-radius:50%;
 }
 /***************Slider**************/

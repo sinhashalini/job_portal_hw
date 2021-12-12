@@ -24,48 +24,49 @@
   </head>
   
   <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="#">SimplyJob</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link " href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" > Dropdown</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <button class="btn0 text-center">Register</button>
-              <button class="btn1 mx-2">Login</button>
-            </form>
-          </div>
-        </div>
+    <!-- ##################  Nav section ############################-->
+    <!-- source at https://getbootstrap.com/docs/4.1/components/navbar/-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand mx-2" href="index.html">SimplyJob</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+              <a class="nav-link " href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html" > About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        <form class="d-flex m-auto">
+          <a href="./register.html" class="btn btn-primary btn-reg">Want a Job</a>
+          <a href="./contact.html" class="btn btn-primary btn-post mx-2 ">Post a Job</a>
+          
+        </form>
+      </div>
     </nav>
 
     <!-- ##################  main section ############################-->
     <section class="main py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-7">
-                    <h1>Simply Search <br>
-                    Sinfull Jobs</h1>
-                    <input type="text" placeholder="Keyword">
-                    <button class="btn2 mt-5">Find Job</button>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="container py-5">
+          <div class="row">
+              <div class="col-lg-7">
+                  <h1>Simply Search <br>
+                  Your Dream Job</h1>
+                  <input type="text" placeholder="Keyword">
+                  <button class="btn2 mt-5">Find Job</button>
+              </div>
+          </div>
+      </div>
+  </section>
 
     <!-- ################     Register secton ###############-->
     <section class="register py-5">
@@ -74,21 +75,21 @@
             <hr>
             <form class="needs-validation" novalidate>
                 <div class="form-row">
-                  <div class="col-md-4 mb-3">
+                  <div class="mb-3">
                     <label for="validationCustom01">First name</label>
                     <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" required>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
                   </div>
-                  <div class="col-md-4 mb-3">
+                  <div class="mb-3">
                     <label for="validationCustom02">Last name</label>
                     <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" required>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
                   </div>
-                  <div class="col-md-4 mb-3">
+                  <div class="mb-3">
                     <label for="validationCustomUsername">Username</label>
                     <div class="input-group">
                       <div class="input-group-prepend">
@@ -102,14 +103,14 @@
                   </div>
                 </div>
                 <div class="form-row">
-                  <div class="col-md-4 mb-3">
+                  <div class="mb-3">
                     <label for="validationCustom03">City</label>
                     <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
                     <div class="invalid-feedback">
                       Please provide a valid city.
                     </div>
                   </div>
-                  <div class="col-md-4 mb-3">
+                  <div class=" mb-3">
                     <label for="validationCustom04">State</label>
                     <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
                     <div class="invalid-feedback">
@@ -142,7 +143,7 @@
                   </div>
                 </div>
 
-                <button class="btn0 btn-primary" type="submit">Submit form</button>
+                <button class="btn-reg btn-primary" type="submit">Submit form</button>
               </form>
          </div>
         </div>
@@ -168,7 +169,58 @@
           }, false);
         })();
         </script>
-
+            <!-- ################   footer ############### -->
+            <section class="footer my-5">
+              <div class="container-fluid">
+                  <div class="row py-2">
+                      <div class="col-lg-10 m-auto">
+                          <div class="row">
+                              <div class="col-lg-3">
+                                  <h3 class="py-5">About Us</h3>
+                                  <p>Add captions to your slides easily with the .carousel-caption element within any .carousel-item. </p>
+  
+                              </div>
+                              <div class="col-lg-3">
+                                  <h3 class="py-5">Contact US</h3>
+                                  <p> XYZ adrress  </p>
+                                  <p class="link"> Phone: +1232323222</p>
+                                  <p class="link"> Email: +info@jobsearch.com</p>
+                              </div>
+                              <div class="col-lg-3">
+                                  <h3 class="py-5">Important Link</h3>
+                                  <p class="link"> Contact Us</p>
+                                  <p class="link"> Testimony</p>
+                                  <p class="link"> Properies</p>
+                                  <p class="link"> Support</p>
+                              </div>
+                              <div class="col-lg-3">
+                                  <h3 class="py-5">Newsletter</h3>
+                                  <p> They can be easily hidden on smaller viewports, as shown below, with optional display utilities.  </p>
+                                  <input type="text"  placeholder="Enter your email">
+                                  <button>Go</button>
+  
+                              </div>
+                          </div>
+                          <hr>
+                          <div class="row  d-flex justify-content-center">
+                              <div class="col-lg-4 text-center py-2">
+                                      <p> Follow Us</p>
+                                  <!-- Add font awesome icons -->
+                                      <a href="#" class="fa fa-facebook"></a>
+                                      <a href="#" class="fa fa-twitter"></a>
+                                      <a href="#" class="fa fa-google"></a>
+                                      <a href="#" class="fa fa-linkedin"></a>
+                              </div>
+                          </div>
+                          <div class="text-center">
+                              <p>Copyright &copy; Shalini Sinha @ Redi School. All rights reserved.</p>
+                          </div>
+                          
+                      </div>
+  
+                  </div>
+              </div>
+          </section>
   </body>
 
 </html>
