@@ -167,7 +167,6 @@
  .apply{
     background: url(./img/apply_back.png)no-repeat;
     background-size: cover;
-    height: 75vh;
     width: 100%;
  }
  .apply .card{
@@ -289,6 +288,7 @@
       margin: 20px;
       display: inline-block;
   }
+
 
 
   .address{

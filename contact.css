@@ -98,14 +98,18 @@ style>* {
   i{
     align-self: center;
   }
-  .bg-image {
-    height:34vh;
-    background-image: url(./img/apply_back.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
+  .bg-image{
+    background: url(./img/apply_back.png) no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+}
+.bg-image h1{
+    font-size: 5rem;
+    font-weight : 600;
+    color:rgb(85, 65, 172);
+    margin: 7rem;
+}
   
   .container py-5{
     background-image: url(./img/apply_background.jpg);
