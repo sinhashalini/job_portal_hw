@@ -62,7 +62,7 @@
 .main{
     background: url(./img/jump.jpg) no-repeat;
     background-size: cover;
-    height: 80%;
+    height: 80vh;
     width: 100%;
 }
 .main h1{
@@ -115,14 +115,15 @@
 .btn3{
     height: 70px;
     width: 70%;
-    color:rgb(120, 130,230);
-    border: 1px solid rgb(120, 130,230);
-    background: transparent;
+    color:white;
+    border: none;
+    background: rgb(102,102,214);
     border-radius: 5px;
     transition: all 0.4s;
+    font-weight: bold;
 }
  .btn3:hover{
-     background: rgb(102,102,214);
+     background: orangered;
      color: white;
      border:none;
      outline:none;
@@ -211,7 +212,7 @@
 
 /*****************  Footer ********************/
 .footer{
-    background: peru;
+    background:#dc5435;
     color: white;
 }
 
