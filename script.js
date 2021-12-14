@@ -50,7 +50,7 @@ function validateAndSubmitModal( ){
     }
 
 
-    alert("Thanks for subscribing to our newslwtter!");
+    alert("Thanks for subscribing to our newsletter!");
     closeModal();
     return true;
 }
